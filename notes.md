@@ -87,7 +87,6 @@
 
 
 
-
 ##2.2 生成学习算法(Generative Learning Algorithms)
 &emsp;　生成学习算法是对各个类分别建模，通过学习，建立每个类别的$P(x|y)$的概率模型(通过极大似然估计求解模型参数),同时通过样本计算每个类别的$P(y)$，从而得到$P(x,y)=P(x|y)P(y)$。在预测时，利用贝叶斯公式，$P(y=i|x)=\frac{P(x|y=i)P(y)}{P(x)}$,其中$p(x)=\sum_i{P(x|y=i)P(y=i)}$，求得样本$x$对每一类$y=i$的概率，从而得到$x$属于哪一类。
 ###2.2.1 高斯判别分析(Gaussian discriminant analysis)
